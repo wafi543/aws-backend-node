@@ -23,10 +23,11 @@ app.use(
 const getStudents = (request, response) => {
   pool.query('select * from students', (error, results) => {
     if (error) {
+      console.log(error);
       response.status(500).send(error);
       return;
     }
-    response.status(200).json(results.rows)
+    response.status(200).json(results.rows);
   })
 }
 
