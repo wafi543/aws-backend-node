@@ -2,6 +2,7 @@ const express = require('express')
 const app = express()
 const port = 3001
 const bodyParser = require('body-parser')
+const cors = require('cors');
 const Pool = require('pg').Pool
 const pool = new Pool({
   user: process.env.DB_USER,
@@ -12,6 +13,9 @@ const pool = new Pool({
   ssl: {require: true, rejectUnauthorized: false}
 })
 
+app.use(cors({
+    origin: 'http://localhost:3000'
+}));
 
 app.use(bodyParser.json())
 app.use(
