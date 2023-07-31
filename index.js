@@ -47,6 +47,8 @@ const getGroups = (request, response) => {
 
 app.get('/students', getStudents)
 
+app.get('/groups', getGroups)
+
 app.listen(port, () => {
   console.log(`App running on port ${port}.`)
 })
