@@ -41,7 +41,7 @@ const getGroups = (request, response) => {
   })
 }
 
-app.get('/api/students', getStudents)
+app.get('/students', getStudents)
 
 app.listen(port, () => {
   console.log(`App running on port ${port}.`)
