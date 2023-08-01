@@ -36,7 +36,7 @@ const getStudents = (request, response) => {
 }
 
 const getGroups = (request, response) => {
-  pool.query('select * from students where is_leader = true', (error, results) => {
+  pool.query('select * from groups', (error, results) => {
     if (error) {
       response.status(500).send(error);
       return;
