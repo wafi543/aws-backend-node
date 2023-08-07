@@ -20,3 +20,6 @@ if you face an issue with running and you have already running on 3001, you migh
 ### `sudo fuser -k 3001/tcp`
 
 then run the backend again
+
+## For the database use the correct sql ddl to create the tables (programs, groups, students),
+## then manually add your students, and their groups.
