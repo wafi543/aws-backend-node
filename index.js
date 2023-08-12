@@ -14,7 +14,7 @@ const pool = new Pool({
 })
 
 app.use(cors({
-    origin: ['http://localhost:3000', 'http://16.170.221.41']
+    origin: ['http://localhost:3000', 'http://13.51.193.197']
 }));
 
 app.use(bodyParser.json())
